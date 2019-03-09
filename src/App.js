@@ -10,6 +10,7 @@ import Header from "./components/Header/Header.js";
 import { Row, Col } from "reactstrap";
 import About from './About.js';
 import NotFound from './NotFound.js';
+import AddClient from './components/AddClient/AddClient.js';
 
 import Dashboard from './components/Dashboard/Dashboard.js';
 
@@ -27,6 +28,7 @@ class App extends Component {
                  <Switch>
                   <Route exact path="/" component={Dashboard}/>
                   <Route exact path="/about" component={About}/>
+                  <Route exact path="/client/add" component={AddClient}/>
                   <Route component={NotFound}/>
                  </Switch>
                </Col>
