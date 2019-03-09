@@ -9,9 +9,10 @@ const Header = props => {
     <div>
       <Navbar color="light" light expand="md">
         <NavbarBrand href="/">{branding}</NavbarBrand>
-        <Link to="/" className="nav-link"><i className="fas fa-home" /> Home</Link>
+        <Link to="/" className="nav-link"><i className="fas fa-home" /> Dashboard</Link>
 
         <Nav className="ml-auto" navbar>
+          <Link to="/" className="nav-link"><i className="fas fa-home" /> Home</Link>
           <Link to="/contact/add" className="nav-link"><i className="fas fa-plus" /> Add Contact</Link>
           <Link to="/about" className="nav-link">About</Link>
         </Nav>
