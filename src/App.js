@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
+import { Provider } from "react-redux";
+import store from './store.js';
+
+
 import "./App.css";
 import Header from "./components/Header/Header.js";
 import { Row, Col } from "reactstrap";
-import { Provider } from "./Context.js";
 import About from './About.js';
 import NotFound from './NotFound.js';
 
@@ -14,7 +17,7 @@ import Dashboard from './components/Dashboard/Dashboard.js';
 class App extends Component {
   render() {
     return (
-      <Provider>
+      <Provider store={store}>
           <Router>
               <div>
            <Header branding="Noter Platform" />
