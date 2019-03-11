@@ -26,17 +26,12 @@ class Clients extends Component {
     }
 
     render() {
-
-        // const clients = [
-        //     {id: 1, firstName: "Tomer", lastName: "Omri", email: "tomeromrix@gmail.com", phone: "98237489", balance: 50},
-        //     {id: 2, firstName: "Karen", lastName: "Filiremeni", email: "k@gmail.com", phone: "0293114", balance: 20}
-        // ];
-
         const {clients} = this.props;
         const {totalOwed} = this.state;
 
         if (clients) {
-            return (<div>
+            return (
+                <div>
                 <Row>
                     <Col>  <h4>Clients list</h4> </Col>
                     <Col sm="2">  <h5 className="text-right text-secondary"> Total Owed{' '}
